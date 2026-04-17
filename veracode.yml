@@ -1,7 +1,7 @@
-actions:
-  veracode_static_scan:
-   build:
-     packager_image: acckarthikbharadwaj/packaging-dependencies:10
+#actions:
+ # veracode_static_scan:
+  # build:
+    # packager_image: acckarthikbharadwaj/packaging-dependencies:10
 veracode_static_scan:
   push:
     trigger: true
