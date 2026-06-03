@@ -9,7 +9,8 @@ concurrency:
 on:
   repository_dispatch:
     types: [veracode-sca-scan]
-
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 jobs:
   cleanup:
     uses: ./.github/workflows/veracode-clean-up.yml
