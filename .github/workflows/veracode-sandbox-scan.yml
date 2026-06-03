@@ -19,7 +19,8 @@ on:
       - java-sandbox-scan
       - unidentified-lang-sandbox-scan
       - ruby-sandbox-scan
-
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 jobs:
   cleanup:
     uses: ./.github/workflows/veracode-clean-up.yml
