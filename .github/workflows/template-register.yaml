@@ -6,7 +6,8 @@ run-name: Veracode Register Build
 on:
   repository_dispatch:
     types: [register-build]
-
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 jobs:
   register:
     runs-on: ${{ fromJSON(github.event.client_payload.user_config.default_runs_on) }}
