@@ -54,7 +54,8 @@ on:
       debug:
         required: false
         type: string
-
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 jobs:
   prepare_pipeline_scan:
     runs-on: ${{ fromJson(inputs.default_runs_on) }}
